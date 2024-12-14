@@ -7,27 +7,21 @@ import { SITE } from "@consts";
 <header>
   <Container>
     <div class="flex flex-wrap gap-y-2 justify-between">
-      <Link href="/" underline={false}>
-        <div class="font-semibold">
+      <Link href="/">
+        <div class="font-semibold text-3xl">
           {SITE.NAME}
         </div>
       </Link>
-      <nav class="flex gap-1">
-        <Link href="/blog">
-          blog
+      <nav class="flex gap-7">
+        <Link href="/blog" class="text-lg" underline={true}>
+          Blogs
         </Link>
-        <span>
-          {`/`}
-        </span>
-        <Link href="/work">
-          work
+        <Link href="/work" class="text-lg" underline={true}>
+          Work
         </Link>
-        <span>
-          {`/`}
-        </span>
-        <Link href="/projects">
-          projects
-        </Link>
+        <Link href="/projects" class="text-lg" underline={true}>
+          Projects
+        </Link>        
       </nav>
     </div>
   </Container>

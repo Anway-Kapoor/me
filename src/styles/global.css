@@ -19,39 +19,41 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/75;
+  @apply bg-stone-100 dark:bg-[rgb(22,26,37)]; 
+  @apply text-black dark:text-[rgba(234,237,243,1)];
 }
 
 header {
   @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply bg-stone-100/75 dark:bg-stone-900/25;
-  @apply backdrop-blur-sm saturate-200;
+  @apply bg-stone-100 dark:bg-[rgb(22,26,37)]; 
+  /* @apply backdrop-blur-sm saturate-200; */
 }
 
 main {
   @apply flex-1 py-32;
+  @apply bg-stone-100 dark:bg-[rgb(22,26,37)]; 
 }
 
 footer {
   @apply py-5 text-sm;
+  @apply bg-stone-100 dark:bg-[rgb(22,26,37)];
 }
 
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
   @apply prose-headings:font-semibold prose-p:font-serif;
-  @apply prose-headings:text-black prose-headings:dark:text-white;
+  @apply prose-headings:text-black prose-headings:dark:text-[rgb(234,237,243)];
 }
 
 @layer utilities {
   article a {
     @apply font-sans text-current underline underline-offset-2;
-    @apply decoration-black/15 dark:decoration-white/30;
+    @apply decoration-black/15 dark:decoration-[rgb(255,107,1)/30]; 
     @apply transition-colors duration-300 ease-in-out;
   }
   article a:hover {
-    @apply text-black dark:text-white;
-    @apply decoration-black/25 dark:decoration-white/50;
+    @apply text-black dark:text-[rgb(255,107,1)]; 
+    @apply decoration-black/25 dark:decoration-[rgb(255,107,1)/50];
   }
 }
 
