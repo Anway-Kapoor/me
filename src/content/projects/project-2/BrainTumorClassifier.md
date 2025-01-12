@@ -11,7 +11,7 @@ repoURL: "https://huggingface.co/An-way/brain_tumor-classifier/tree/main"
 - Developed a machine learning project focused on brain tumor classification, specifically identifying glioma, meningioma, pituitary tumors, or no tumor, using medical imaging data.  
 - Implemented data preprocessing techniques, including image augmentation and normalization, to enhance model performance and robustness in tumor classification tasks.  
 - Designed and trained a convolutional neural network (CNN) architecture, achieving significant accuracy in classifying different brain tumor types based on MRI scans.  
-- Leveraged visualization tools such as Grad-CAM to interpret model predictions and understand the regions of interest contributing to the classification, facilitating insights into feature importance.  
+- Analyzed model predictions and performance metrics to gain insights into classification accuracy and understand the key features contributing to brain tumor detection.
 - Conducted extensive testing and validation of the model on unseen data, culminating in the successful deployment of an application capable of accurate and real-time brain tumor detection.
 ## Model Evaluation
 
